@@ -1,0 +1,8 @@
+.project-img {
+  text-align: center;
+}
+.project-img img {
+  border: 1px solid white;
+  width: 75%;
+  height: 350px;
+}

@@ -1,0 +1,11 @@
+.single-skill-area {
+  width: 75%;
+}
+.progress-bar {
+  background-color: rgb(35, 73, 37) !important;
+}
+@media only screen and (max-width: 666px) {
+  .single-skill-area {
+    width: 100%;
+  }
+}
