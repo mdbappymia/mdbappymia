@@ -5,7 +5,7 @@ import "./ProjectDetails.css";
 const ProjectDetails = ({ id }) => {
   const [project, setProject] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/projects/${id}`)
+    fetch(`https://mysterious-hollows-45831.herokuapp.com/projects/${id}`)
       .then((res) => res.json())
       .then((data) => setProject(data));
   }, [id]);

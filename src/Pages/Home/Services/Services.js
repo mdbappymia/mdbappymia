@@ -6,7 +6,7 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://mysterious-hollows-45831.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -17,7 +17,7 @@ const Services = () => {
         <Row className="text-center">
           {services.map((service) => (
             <Col lg={3} md={6} sm={12} key={service._id}>
-              <Card className="bg-black service-card">
+              <Card className="bg-black service-card mb-3">
                 <div className="service-icon">
                   <i className={service.icon}></i>
                 </div>

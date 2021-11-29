@@ -6,6 +6,7 @@ import Contact from "../Contact/Contact";
 import Header from "../Header/Header";
 import LatestBlog from "../LatestBlog/LatestBlog";
 import Projects from "../Projects/Projects";
+import Reviews from "../Reviews/Reviews";
 import Services from "../Services/Services";
 import Skills from "../Skills/Skills";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <Projects></Projects>
       <LatestBlog></LatestBlog>
       <Contact></Contact>
+      <Reviews></Reviews>
       <Footer></Footer>
     </div>
   );

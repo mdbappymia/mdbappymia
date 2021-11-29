@@ -1,0 +1,9 @@
+.review-part {
+  width: 50%;
+  margin: auto;
+}
+@media only screen and (max-width: 666px) {
+  .review-part {
+    width: 95%;
+  }
+}

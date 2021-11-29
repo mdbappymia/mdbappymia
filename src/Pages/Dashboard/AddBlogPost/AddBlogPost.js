@@ -8,6 +8,7 @@ const AddBlogPost = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -15,8 +16,32 @@ const AddBlogPost = () => {
       data.img =
         "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
     }
-    const addBlogPost = { ...data, email: user.email, name: user.displayName };
-    console.log(addBlogPost);
+    const isPost = window.confirm("Are you sure added the post?");
+    if (isPost) {
+      const date = new Date();
+      const post_date = date.toDateString();
+      const addBlogPost = {
+        ...data,
+        email: user.email,
+        name: user.displayName,
+        date: post_date,
+      };
+      console.log(addBlogPost);
+      fetch("https://mysterious-hollows-45831.herokuapp.com/blogs", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(addBlogPost),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          if (result.acknowledged) {
+            alert("Successfully posted");
+            reset();
+          }
+        });
+    }
   };
   return (
     <div className=" bg-black pb-5">

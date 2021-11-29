@@ -41,8 +41,9 @@ const Header = () => {
               </Carousel>
               <a
                 className="d-block mt-4"
-                href="https://doc-0o-bg-docs.googleusercontent.com/docs/securesc/kll3d7ntsaj3lb6rl3fnbbubef2cdsib/qa7i5gmv9ok4kpgi9nilt8b7eggfj571/1637741475000/05943190864305863752/05943190864305863752/1AhGHpU1kKeSJ23cLFv__SccXPJbyr-aI?e=download&authuser=1&nonce=1ueludmd5ufsq&user=05943190864305863752&hash=8jt1iu950nv9d9hluiu7cjqjk9n7rie8"
-                download
+                href="https://drive.google.com/file/d/1AhGHpU1kKeSJ23cLFv__SccXPJbyr-aI/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Button>Download Resume</Button>
               </a>

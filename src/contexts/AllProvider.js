@@ -4,9 +4,9 @@ import useFirebase from "../hooks/useFirebase";
 export const SiteContext = createContext();
 const AllProvider = ({ children }) => {
   const AuthContext = useFirebase();
-  const AllContext = { ...AuthContext };
+  // const AllContext = { ...AuthContext };
   return (
-    <SiteContext.Provider value={AllContext}>{children}</SiteContext.Provider>
+    <SiteContext.Provider value={AuthContext}>{children}</SiteContext.Provider>
   );
 };
 

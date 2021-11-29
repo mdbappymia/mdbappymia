@@ -1,9 +1,15 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <div className="bg-black">
-      <h3 className="text-center py-5">This is footer</h3>
+      <Container className="d-flex justify-content-between">
+        <h3 className=" py-5">MD. BAPPY MIA</h3>
+        <p className=" py-5 mt-2 text-secondary">
+          2021 Copyright &copy; All right received
+        </p>
+      </Container>
     </div>
   );
 };

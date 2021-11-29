@@ -9,6 +9,8 @@ import InsertService from "./Pages/Dashboard/InsertServices/InsertService";
 import InsertProject from "./Pages/Dashboard/InsertProject/InsertProject";
 import ProjectDetailsHome from "./Pages/ProjectDetails/ProjectDetailsHome/ProjectDetailsHome";
 import AddBlogPost from "./Pages/Dashboard/AddBlogPost/AddBlogPost";
+import BlogDetailsHome from "./Pages/BlogDetails/BlogDetailsHome/BlogDetailsHome";
+import GiveReview from "./Pages/GiveReview/GiveReview";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
           <Route path="/insert-project" element={<InsertProject />} />
           <Route path="/projects/:id" element={<ProjectDetailsHome />} />
           <Route path="/add-blog-post" element={<AddBlogPost />} />
+          <Route path="/blogs/:id" element={<BlogDetailsHome />} />
+          <Route path="/review" element={<GiveReview />} />
         </Routes>
       </BrowserRouter>
     </AllProvider>

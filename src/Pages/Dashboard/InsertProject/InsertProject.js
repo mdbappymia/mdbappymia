@@ -9,6 +9,7 @@ const InsertProject = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -29,15 +30,23 @@ const InsertProject = () => {
       liveLink: data.liveLink,
     };
     console.log(insertProject);
-    fetch("http://localhost:5000/projects", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(insertProject),
-    })
-      .then((res) => res.json())
-      .then((result) => console.log(result));
+    const isProjectAdd = window.confirm("Are you sure add the project?");
+    if (isProjectAdd) {
+      fetch("https://mysterious-hollows-45831.herokuapp.com/projects", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(insertProject),
+      })
+        .then((res) => res.json())
+        .then((result) => {
+          if (result.acknowledged) {
+            alert("Product added Successfully");
+            reset();
+          }
+        });
+    }
   };
   return (
     <div className="bg-dark py-5">

@@ -1,0 +1,9 @@
+.blog-details-img {
+  width: 75%;
+  margin: auto;
+  padding: 20px 0;
+}
+.blog-details-img img {
+  height: 300px;
+  width: 100%;
+}
