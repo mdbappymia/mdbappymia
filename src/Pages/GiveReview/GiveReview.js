@@ -11,7 +11,12 @@ const GiveReview = () => {
   console.log(rate);
   const submitReview = (e) => {
     e.preventDefault();
-    const review = { rate: rate, name: name, message: message };
+    const review = {
+      rate: rate,
+      name: name,
+      message: message,
+      status: "pending",
+    };
     const isReview = window.confirm("Are you sure information is correct?");
     if (isReview) {
       fetch("https://mysterious-hollows-45831.herokuapp.com/reviews", {
