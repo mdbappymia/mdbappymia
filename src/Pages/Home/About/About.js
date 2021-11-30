@@ -13,7 +13,7 @@ const About = () => {
           <h1 className="text-center my-5 title-heading">About Me</h1>
           <Col md={12} lg={6}>
             <ScrollAnimation animateIn="flipInY">
-              <img className="w-75" src={aboutPic} alt="" />
+              <img className="w-75 mb-3" src={aboutPic} alt="" />
             </ScrollAnimation>
           </Col>
           <Col md={12} lg={6}>

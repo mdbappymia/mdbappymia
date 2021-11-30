@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="bg-black">
-      <Container className="d-flex justify-content-between">
-        <h3 className=" py-5">MD. BAPPY MIA</h3>
-        <p className=" py-5 mt-2 text-secondary">
+      <Container className="footer-page-content">
+        <h3 className=" py-md-5 mt-3">MD. BAPPY MIA</h3>
+        <p className="pb-sm-3 py-md-5 mt-3 text-secondary">
           2021 Copyright &copy; All right received
         </p>
       </Container>

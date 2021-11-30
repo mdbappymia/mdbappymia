@@ -3,8 +3,15 @@ import { Navigate, useLocation } from "react-router";
 import useStore from "../../../hooks/useStore";
 
 const PrivetRoute = ({ children }) => {
-  const { user } = useStore();
+  const { user, isLoading } = useStore();
   const location = useLocation();
+  if (isLoading) {
+    return (
+      <h1 style={{ height: "100vh", background: "black", textAlign: "center" }}>
+        Loading...
+      </h1>
+    );
+  }
   if (user.email === "bappy@gmail.com") {
     return children;
   }

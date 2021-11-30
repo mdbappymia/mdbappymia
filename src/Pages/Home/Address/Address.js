@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "./Address.css";
 
 const Address = () => {
   return (
     <div className="py-4">
-      <Container className="d-flex justify-content-between">
+      <Container className="address-page-container">
         <p className="m-0">Address: Dhaka, Bangladesh</p>
         <div>
           <p className="m-0">Phone: +8801732249303</p>

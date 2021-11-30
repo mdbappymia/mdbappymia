@@ -24,7 +24,7 @@ const Header = () => {
                   fade
                   controls={false}
                   indicators={false}
-                  interval={1000}
+                  interval={1500}
                 >
                   <Carousel.Item>
                     <h4>React Developer</h4>
