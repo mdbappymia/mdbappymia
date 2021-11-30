@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 import { Carousel, Col, Container, Row, Button } from "react-bootstrap";
 import headerImg from "./../../../Resourses/image/my-Pic-removebg-preview.png";
 import "./Header.css";
@@ -9,48 +10,86 @@ const Header = () => {
       <Container>
         <Row>
           <Col md={12} lg={6} className="d-flex align-items-center">
-            <div>
-              <p className="text-uppercase text-secondary mt-5">
-                Welcome to my World
-              </p>
-              <h1 className="mt-3 fw-bold my-name">
-                Hi, I'm <span className="text-warning">Md. Bappy Mia</span>
-              </h1>
-              <Carousel
-                className="my-3"
-                fade
-                controls={false}
-                indicators={false}
-                interval={1000}
-              >
-                <Carousel.Item>
-                  <h4>React Developer</h4>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <h4>MERN stack developer</h4>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <h4>Full stack Web Developer</h4>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <h4>Programmer</h4>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <h4>Javascript Developer</h4>
-                </Carousel.Item>
-              </Carousel>
-              <a
-                className="d-block mt-4"
-                href="https://drive.google.com/file/d/1AhGHpU1kKeSJ23cLFv__SccXPJbyr-aI/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button>Download Resume</Button>
-              </a>
-            </div>
+            <ScrollAnimation animateIn="bounceInLeft">
+              <div>
+                <p className="text-uppercase text-secondary mt-5">
+                  Welcome to my World
+                </p>
+                <h1 className="mt-3 fw-bold my-name">
+                  Hi, I'm <span className="text-warning">Md. Bappy Mia</span>
+                </h1>
+                <Carousel
+                  pause={false}
+                  className="my-3"
+                  fade
+                  controls={false}
+                  indicators={false}
+                  interval={1000}
+                >
+                  <Carousel.Item>
+                    <h4>React Developer</h4>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <h4>MERN stack developer</h4>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <h4>Full stack Web Developer</h4>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <h4>Programmer</h4>
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <h4>Javascript Developer</h4>
+                  </Carousel.Item>
+                </Carousel>
+
+                <div className="social-contact-me">
+                  <a
+                    href="https://www.linkedin.com/in/md-bappy-mia"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://github.com/mdbappymia"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/mdbappymia.me"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/mdbappymia"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </div>
+                <a
+                  className="d-block mt-4"
+                  href="https://drive.google.com/file/d/1AhGHpU1kKeSJ23cLFv__SccXPJbyr-aI/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button>Download Resume</Button>
+                </a>
+              </div>
+            </ScrollAnimation>
           </Col>
           <Col md={12} lg={6} className="text-center">
-            <img className="w-75" src={headerImg} alt="Header" />
+            <img
+              className="w-75 animate__animated animate__pulse animate__infinite header-img"
+              src={headerImg}
+              alt="Header"
+            />
           </Col>
         </Row>
       </Container>

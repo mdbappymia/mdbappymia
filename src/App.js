@@ -11,6 +11,7 @@ import ProjectDetailsHome from "./Pages/ProjectDetails/ProjectDetailsHome/Projec
 import AddBlogPost from "./Pages/Dashboard/AddBlogPost/AddBlogPost";
 import BlogDetailsHome from "./Pages/BlogDetails/BlogDetailsHome/BlogDetailsHome";
 import GiveReview from "./Pages/GiveReview/GiveReview";
+import PrivetRoute from "./Pages/Authentication/PrivetRoute/PrivetRoute";
 
 const App = () => {
   return (
@@ -20,10 +21,31 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/insert-service" element={<InsertService />} />
-          <Route path="/insert-project" element={<InsertProject />} />
+          <Route
+            path="/insert-service"
+            element={
+              <PrivetRoute>
+                <InsertService />
+              </PrivetRoute>
+            }
+          />
+          <Route
+            path="/insert-project"
+            element={
+              <PrivetRoute>
+                <InsertProject />
+              </PrivetRoute>
+            }
+          />
+          <Route
+            path="/add-blog-post"
+            element={
+              <PrivetRoute>
+                <AddBlogPost />
+              </PrivetRoute>
+            }
+          />
           <Route path="/projects/:id" element={<ProjectDetailsHome />} />
-          <Route path="/add-blog-post" element={<AddBlogPost />} />
           <Route path="/blogs/:id" element={<BlogDetailsHome />} />
           <Route path="/review" element={<GiveReview />} />
         </Routes>

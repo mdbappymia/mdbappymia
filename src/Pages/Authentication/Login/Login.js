@@ -1,19 +1,22 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useLocation } from "react-router";
 import { Link, useNavigate } from "react-router-dom";
 import useStore from "../../../hooks/useStore";
 import "./Login.css";
 
 const Login = () => {
   const { signInUsingEmailAndPassword } = useStore();
+  let location = useLocation();
   const navigate = useNavigate();
+  let from = location.state?.from?.pathname || "/";
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    signInUsingEmailAndPassword(data.email, data.password, navigate);
+    signInUsingEmailAndPassword(data.email, data.password, navigate, from);
   };
   return (
     <div className="bg-black signup-page">

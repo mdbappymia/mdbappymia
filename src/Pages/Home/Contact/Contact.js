@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black py-5">
+    <div className="bg-black py-5" id="contact">
       <Container>
         <h1 className="text-center fw-bold">Contact Us</h1>
         <form className="bg-black" ref={form} onSubmit={sendEmail}>

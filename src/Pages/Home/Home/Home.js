@@ -2,6 +2,7 @@ import React from "react";
 import AppBar from "../../Shared/AppBar/AppBar";
 import Footer from "../../Shared/Footer/Footer";
 import About from "../About/About";
+import Address from "../Address/Address";
 import Contact from "../Contact/Contact";
 import Header from "../Header/Header";
 import LatestBlog from "../LatestBlog/LatestBlog";
@@ -13,6 +14,7 @@ import Skills from "../Skills/Skills";
 const Home = () => {
   return (
     <div className="bg-dark">
+      <Address />
       <AppBar></AppBar>
       <Header></Header>
       <About></About>

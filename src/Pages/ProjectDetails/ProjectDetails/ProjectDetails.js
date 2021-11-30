@@ -34,12 +34,14 @@ const ProjectDetails = ({ id }) => {
               <a href={liveLink} target="_blank" rel="noreferrer">
                 <Button className="mx-2">Live Site</Button>
               </a>
-              <a href={codeLink[0] || "/"} target="_blank" rel="noreferrer">
+              <a href={codeLink[0]} target="_blank" rel="noreferrer">
                 <Button className="mx-2">Client Side Code</Button>
               </a>
-              <a href={codeLink[1] || "/"} target="_blank" rel="noreferrer">
-                <Button className="mx-2">Server Side Code</Button>
-              </a>
+              {codeLink[1] && (
+                <a href={codeLink[1]} target="_blank" rel="noreferrer">
+                  <Button className="mx-2">Server Side Code</Button>
+                </a>
+              )}
             </>
           )}
         </div>

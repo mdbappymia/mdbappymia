@@ -8,7 +8,7 @@ const AppBar = () => {
   const { user, logOut } = useStore();
   console.log(logOut);
   return (
-    <Navbar variant="dark" bg="black" expand="lg">
+    <Navbar variant="dark" bg="black" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="/" className="brand-name">
           BAPPY
@@ -21,6 +21,9 @@ const AppBar = () => {
             </Nav.Link>
             <Nav.Link as={HashLink} to="/#about">
               About
+            </Nav.Link>
+            <Nav.Link as={HashLink} to="/#skills">
+              Skills
             </Nav.Link>
             <Nav.Link as={HashLink} to="/#services">
               Service

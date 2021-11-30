@@ -2,3 +2,20 @@
   font-weight: 900;
   font-size: 50px;
 }
+.social-contact-me {
+  margin-top: 20px;
+}
+.social-contact-me a i {
+  font-size: 30px;
+}
+.social-contact-me a {
+  padding-right: 15px;
+}
+.social-contact-me a i:hover {
+  color: tomato;
+  transform: scale(1.05) rotate(360deg);
+}
+.header-img {
+  border-radius: 50%;
+  margin-bottom: 40px;
+}

@@ -39,11 +39,11 @@ const useFirebase = () => {
         setIsLoading(false);
       });
   };
-  const signInUsingEmailAndPassword = (email, password, navigate) => {
+  const signInUsingEmailAndPassword = (email, password, navigate, from) => {
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        navigate("/");
+        navigate(from);
       })
       .catch((error) => {
         setError(error.message);
