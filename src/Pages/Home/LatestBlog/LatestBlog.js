@@ -15,11 +15,7 @@ const LatestBlog = () => {
     <div id="blog" className="pb-5">
       <Container>
         <h1 className="text-center fw-bold my-5">Latest blogs</h1>
-        {!blogs.length ? (
-          <div className="text-center my-4">
-            <Spinner animation="grow" />
-          </div>
-        ) : (
+        {blogs.length ? (
           <Row>
             {blogs.map((blog, index) => (
               <Col md={6} sm={12} lg={4} key={blog._id}>
@@ -38,6 +34,10 @@ const LatestBlog = () => {
               </Col>
             ))}
           </Row>
+        ) : (
+          <div className="text-center my-4">
+            <Spinner animation="grow" />
+          </div>
         )}
       </Container>
     </div>

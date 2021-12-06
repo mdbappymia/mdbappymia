@@ -6,7 +6,6 @@ import "./AppBar.css";
 
 const AppBar = () => {
   const { user, logOut } = useStore();
-  console.log(logOut);
   return (
     <Navbar variant="dark" bg="black" expand="lg" sticky="top">
       <Container>

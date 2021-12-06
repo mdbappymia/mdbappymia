@@ -9,17 +9,15 @@ const Services = () => {
   useEffect(() => {
     fetch("https://mysterious-hollows-45831.herokuapp.com/services")
       .then((res) => res.json())
-      .then((data) => setServices(data));
+      .then((data) => setServices(data))
+      .catch((e) => alert("Data could not loaded. Reload the page"));
   }, []);
+  console.log(services);
   return (
     <div id="services" className="pb-5">
       <h1 className="text-center fw-bold my-5">My Services</h1>
 
-      {!services.length ? (
-        <div className="text-center my-4">
-          <Spinner animation="grow" />
-        </div>
-      ) : (
+      {services.length ? (
         <Container>
           <ScrollAnimation delay={300} animateIn="fadeIn">
             <Row className="text-center">
@@ -41,6 +39,10 @@ const Services = () => {
             </Row>
           </ScrollAnimation>
         </Container>
+      ) : (
+        <div className="text-center my-4">
+          <Spinner animation="grow" />
+        </div>
       )}
     </div>
   );

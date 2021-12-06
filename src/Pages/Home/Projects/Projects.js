@@ -17,11 +17,7 @@ const Projects = () => {
       <Container>
         <h1 className="text-center fw-bold py-5">My Projects</h1>
 
-        {!projects.length ? (
-          <div className="text-center my-4">
-            <Spinner animation="grow" />
-          </div>
-        ) : (
+        {projects.length ? (
           <Row className="text-center">
             {projects.map((project, index) => (
               <Col sm={12} md={6} lg={3} key={project._id}>
@@ -44,6 +40,10 @@ const Projects = () => {
               </Col>
             ))}
           </Row>
+        ) : (
+          <div className="text-center my-4">
+            <Spinner animation="grow" />
+          </div>
         )}
       </Container>
     </div>
