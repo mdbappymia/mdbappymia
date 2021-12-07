@@ -8,7 +8,7 @@ const GiveReview = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
-  console.log(rate);
+
   const submitReview = (e) => {
     e.preventDefault();
     const review = {
@@ -35,7 +35,6 @@ const GiveReview = () => {
           }
         });
     }
-    console.log(review);
   };
   return (
     <div className="bg-dark pb-5">

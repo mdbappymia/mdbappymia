@@ -20,7 +20,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           alert("Send successfully");
           e.target.reset();
         },

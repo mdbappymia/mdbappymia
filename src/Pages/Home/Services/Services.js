@@ -12,7 +12,7 @@ const Services = () => {
       .then((data) => setServices(data))
       .catch((e) => alert("Data could not loaded. Reload the page"));
   }, []);
-  console.log(services);
+
   return (
     <div id="services" className="pb-5">
       <h1 className="text-center fw-bold my-5">My Services</h1>

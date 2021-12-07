@@ -17,7 +17,6 @@ const InsertProject = () => {
     const overview = data.overview.split(".");
     const technology = data.technology.split(",");
     const codeLink = data.codeLink.split(",");
-    console.log(screenshots);
     const insertProject = {
       name: data.name,
       subtitle: data.subtitle,
@@ -29,7 +28,7 @@ const InsertProject = () => {
       codeLink: codeLink,
       liveLink: data.liveLink,
     };
-    console.log(insertProject);
+
     const isProjectAdd = window.confirm("Are you sure add the project?");
     if (isProjectAdd) {
       fetch("https://mysterious-hollows-45831.herokuapp.com/projects", {

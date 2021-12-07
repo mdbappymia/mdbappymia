@@ -19,7 +19,7 @@ const ProjectDetails = ({ id }) => {
     screenshots,
     codeLink,
   } = project;
-  console.log(codeLink);
+
   return (
     <div className="bg-dark py-5">
       <Container>

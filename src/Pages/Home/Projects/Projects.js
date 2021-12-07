@@ -11,7 +11,7 @@ const Projects = () => {
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
-  console.log(projects);
+
   return (
     <div id="projects" className="bg-black pb-5">
       <Container>
