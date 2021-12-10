@@ -9,8 +9,7 @@ const Services = () => {
   useEffect(() => {
     fetch("https://mysterious-hollows-45831.herokuapp.com/services")
       .then((res) => res.json())
-      .then((data) => setServices(data))
-      .catch((e) => alert("Data could not loaded. Reload the page"));
+      .then((data) => setServices(data));
   }, []);
 
   return (
