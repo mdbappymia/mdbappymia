@@ -24,7 +24,6 @@ const LatestBlog = () => {
                     <Card.Img height="200" variant="top" src={blog.img} />
                     <Card.Body>
                       <Card.Title>{blog.title}</Card.Title>
-                      <Card.Text>{blog.description.slice(0, 100)}...</Card.Text>
                       <Link to={`/blogs/${blog._id}`}>
                         <Button variant="primary">View Post</Button>
                       </Link>

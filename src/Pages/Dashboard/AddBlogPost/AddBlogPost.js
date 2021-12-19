@@ -61,7 +61,7 @@ const AddBlogPost = () => {
         />
         {errors.img && <span>This field is required</span>}
         <br />
-        <label>Description:</label>
+        <label>Description (you can insert html code):</label>
         <textarea
           className="form-control"
           rows="10"

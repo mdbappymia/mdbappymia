@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
+import ReactHtmlParser from "react-html-parser";
 import "./BlogDetails.css";
 
 const BlogDetails = ({ id }) => {
@@ -24,7 +25,7 @@ const BlogDetails = ({ id }) => {
           <img src={img} alt="" />
         </div>
         <h2>{title}</h2>
-        <p className="mb-0">{description}</p>
+        <div>{ReactHtmlParser(description)}</div>
       </Container>
     </div>
   );
