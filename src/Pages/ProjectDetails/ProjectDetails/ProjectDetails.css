@@ -1,8 +1,15 @@
 .project-img {
   text-align: center;
+  width: 75%;
+  margin: auto;
 }
 .project-img img {
   border: 1px solid white;
-  width: 75%;
   height: 350px;
+  width: 100%;
+}
+@media screen and (max-width: 666px) {
+  .project-img {
+    width: 95%;
+  }
 }
