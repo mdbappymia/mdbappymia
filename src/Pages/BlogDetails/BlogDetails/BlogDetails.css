@@ -7,3 +7,8 @@
   height: 300px;
   width: 100%;
 }
+@media only screen and (max-width: 666px) {
+  .blog-details-img {
+    width: 95%;
+  }
+}
