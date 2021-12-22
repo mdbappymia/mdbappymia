@@ -18,7 +18,7 @@ const LatestBlog = () => {
         {blogs.length ? (
           <Row>
             {blogs.map((blog, index) => (
-              <Col md={6} sm={12} lg={4} key={blog._id}>
+              <Col className="mb-3" md={6} sm={12} lg={4} key={blog._id}>
                 <ScrollAnimation delay={(index + 1) * 100} animateIn="fadeInUp">
                   <Card className="bg-black">
                     <Card.Img height="200" variant="top" src={blog.img} />
