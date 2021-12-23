@@ -12,7 +12,7 @@ const PrivetRoute = ({ children }) => {
       </h1>
     );
   }
-  if (user.email === "bappy@gmail.com") {
+  if (user.email === "mdbappymia.hstu@gmail.com") {
     return children;
   }
   return <Navigate to="/login" state={{ from: location }} />;
