@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Card, Col, Container, Row, Button, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useStore from "../../../hooks/useStore";
 import "./Projects.css";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/projects")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
+  const { projects } = useStore();
 
   return (
     <div id="projects" className="bg-black pb-5">

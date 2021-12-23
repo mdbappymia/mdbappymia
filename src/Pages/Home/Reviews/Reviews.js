@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "react-rating";
 import "./Reviews.css";
+import useStore from "../../../hooks/useStore";
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/reviews")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
+  const { reviews } = useStore();
   return (
     <div id="reviews">
       <Container>

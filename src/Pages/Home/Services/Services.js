@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Card, Col, Container, Row, Spinner } from "react-bootstrap";
+import useStore from "../../../hooks/useStore";
 import "./Services.css";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/services")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
-
+  const { services } = useStore();
   return (
     <div id="services" className="pb-5">
       <h1 className="text-center fw-bold my-5">My Services</h1>

@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Card, Col, Container, Row, Button, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useStore from "../../../hooks/useStore";
 import "./LatestBlog.css";
 
 const LatestBlog = () => {
-  const [blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/blogs")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
-  }, []);
+  const { blogs } = useStore();
   return (
     <div id="blog" className="pb-5">
       <Container>
