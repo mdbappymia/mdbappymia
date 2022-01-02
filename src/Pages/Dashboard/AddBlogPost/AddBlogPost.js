@@ -46,6 +46,7 @@ const AddBlogPost = () => {
   return (
     <div className=" bg-black pb-5">
       <h1 className="text-center fw-bold py-5">Create a post</h1>
+
       <form className="mx-5" onSubmit={handleSubmit(onSubmit)}>
         <label>Title:</label>
         <input

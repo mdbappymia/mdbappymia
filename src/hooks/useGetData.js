@@ -5,6 +5,7 @@ const useGetData = () => {
   const [projects, setProjects] = useState([]);
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
+  const [recall, setRecall] = useState(false);
   //   blogs data
   // useEffect(() => {
   //   fetch("https://mysterious-hollows-45831.herokuapp.com/blogs")
@@ -30,7 +31,9 @@ const useGetData = () => {
   const getAllDate = async () => {
     const servicesDate = await fetch(
       "https://mysterious-hollows-45831.herokuapp.com/services"
-    ).then((res) => res.json());
+    )
+      .then((res) => res.json())
+      .catch(() => setRecall(true));
     setServices(servicesDate);
     const projectsData = await fetch(
       "https://mysterious-hollows-45831.herokuapp.com/projects"
@@ -47,7 +50,7 @@ const useGetData = () => {
   };
   useEffect(() => {
     getAllDate();
-  }, []);
+  }, [recall]);
   return { blogs, projects, services, reviews };
 };
 
