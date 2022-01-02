@@ -16,7 +16,7 @@ const Projects = () => {
         {projects.length ? (
           <Row className="text-center">
             {projects.map((project, index) => (
-              <Col sm={12} md={6} lg={3} key={project._id}>
+              <Col sm={12} md={6} lg={3} key={project._id} className="mb-3">
                 <ScrollAnimation delay={(index + 1) * 100} animateIn="fadeIn">
                   <Card className="bg-dark project-card">
                     <Card.Img
