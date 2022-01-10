@@ -8,12 +8,12 @@ const Skills = () => {
     <div className="bg-black pb-5" id="skills">
       <Container>
         <h3 className="title-heading text-center py-5">Skills</h3>
-        <ScrollAnimation animateIn="fadeInUp">
+        <ScrollAnimation animateIn="fadeIn">
           <Row>
             <Col lg={6} md={12} className="my-3">
               <div className="single-skill-area">
                 <h4>React JS</h4>
-                <ProgressBar now={80} label={`${80}%`} />
+                <ProgressBar animated now={80} label={`${80}%`} />
               </div>
             </Col>
             <Col lg={6} md={12} className="my-3">

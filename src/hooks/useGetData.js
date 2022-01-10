@@ -8,18 +8,18 @@ const useGetData = () => {
   const [recall, setRecall] = useState(false);
   // blogs data
   useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/blogs")
+    fetch("https://mysterious-hollows-45831.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data.reverse());
+        setServices(data);
         fetch("https://mysterious-hollows-45831.herokuapp.com/projects")
           .then((res) => res.json())
           .then((data) => {
             setProjects(data);
-            fetch("https://mysterious-hollows-45831.herokuapp.com/services")
+            fetch("https://mysterious-hollows-45831.herokuapp.com/blogs")
               .then((res) => res.json())
               .then((data) => {
-                setServices(data);
+                setBlogs(data.reverse());
                 fetch("https://mysterious-hollows-45831.herokuapp.com/reviews")
                   .then((res) => res.json())
                   .then((data) => setReviews(data));
