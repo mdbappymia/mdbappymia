@@ -48,6 +48,7 @@ const App = () => {
           <Route path="/projects/:id" element={<ProjectDetailsHome />} />
           <Route path="/blogs/:id" element={<BlogDetailsHome />} />
           <Route path="/review" element={<GiveReview />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </AllProvider>
