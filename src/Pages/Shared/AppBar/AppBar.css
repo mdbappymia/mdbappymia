@@ -1,0 +1,8 @@
+.brand-name a {
+  color: #fff;
+  text-decoration: none;
+}
+.brand-name a:hover {
+  color: gray;
+  transition: all 0.3s;
+}

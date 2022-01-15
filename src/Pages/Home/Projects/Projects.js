@@ -25,8 +25,16 @@ const Projects = () => {
                       src={project.img}
                     />
                     <Card.Body>
-                      <Card.Title>{project.name}</Card.Title>
-                      <Card.Text>{project.subtitle}</Card.Text>
+                      <Card.Title>
+                        {project.name.length > 20
+                          ? project.name.slice(0, 18)
+                          : project.name}
+                      </Card.Title>
+                      <Card.Text style={{ color: "gray" }}>
+                        {project.subtitle.length > 39
+                          ? project.subtitle.slice(0, 40) + " ..."
+                          : project.subtitle}
+                      </Card.Text>
                       <Link to={`/projects/${project._id}`}>
                         <Button variant="primary">View Details</Button>
                       </Link>

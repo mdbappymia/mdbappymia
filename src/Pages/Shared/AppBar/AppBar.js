@@ -3,15 +3,16 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import useStore from "../../../hooks/useStore";
 import { HashLink } from "react-router-hash-link";
 import "./AppBar.css";
+import { Link } from "react-router-dom";
 
 const AppBar = () => {
   const { user, logOut } = useStore();
   return (
     <Navbar variant="dark" bg="black" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/" className="brand-name">
-          BAPPY
-        </Navbar.Brand>
+        <h2 className="brand-name">
+          <Link to="/">BAPPY</Link>
+        </h2>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
