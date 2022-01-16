@@ -4,11 +4,18 @@ import "./ProjectDetails.css";
 
 const ProjectDetails = ({ id }) => {
   const [project, setProject] = useState({});
+  const [recall, setRecall] = useState(false);
   useEffect(() => {
     fetch(`https://mysterious-hollows-45831.herokuapp.com/projects/${id}`)
       .then((res) => res.json())
-      .then((data) => setProject(data));
-  }, [id]);
+      .then((data) => {
+        setProject(data);
+      })
+      .catch((e) => {
+        setRecall(!recall);
+        console.log(e.message);
+      });
+  }, [id, recall]);
   const {
     img,
     name,

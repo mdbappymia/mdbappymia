@@ -15,8 +15,8 @@ import Skills from "../Skills/Skills";
 import "./Home.css";
 
 const Home = () => {
-  const { reviews } = useStore();
-  if (!reviews.length) {
+  const { preloading } = useStore();
+  if (preloading) {
     return (
       <div className="pre-loader">
         <div className="text-center">
