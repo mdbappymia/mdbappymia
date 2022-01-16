@@ -6,6 +6,7 @@ const useGetData = () => {
   const [services, setServices] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [preloading, setPreloading] = useState(true);
+  const [recall, setRecall] = useState(false);
 
   useEffect(() => {
     fetch("https://mysterious-hollows-45831.herokuapp.com/allData")
@@ -16,8 +17,11 @@ const useGetData = () => {
         setBlogs(data.blogs);
         setReviews(data.reviews);
       })
+      .catch((e) => {
+        setRecall(!recall);
+      })
       .finally(() => setPreloading(false));
-  }, []);
+  }, [recall]);
 
   return { blogs, projects, services, reviews, preloading };
 };
