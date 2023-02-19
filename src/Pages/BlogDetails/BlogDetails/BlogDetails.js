@@ -7,7 +7,7 @@ const BlogDetails = ({ id }) => {
   const [blog, setBlog] = useState({});
   const [recall, setRecall] = useState(false);
   useEffect(() => {
-    fetch(`https://mysterious-hollows-45831.herokuapp.com/blogs/${id}`)
+    fetch(`https://mdbappymia-my-portfolio-server.onrender.com/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlog(data))
       .catch((e) => {

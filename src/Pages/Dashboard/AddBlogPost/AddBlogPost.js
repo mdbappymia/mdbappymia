@@ -27,7 +27,7 @@ const AddBlogPost = () => {
         date: post_date,
       };
       console.log(addBlogPost);
-      fetch("https://mysterious-hollows-45831.herokuapp.com/blogs", {
+      fetch("https://mdbappymia-my-portfolio-server.onrender.com/blogs", {
         method: "POST",
         headers: {
           "content-type": "application/json",

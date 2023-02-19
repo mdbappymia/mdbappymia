@@ -19,7 +19,7 @@ const GiveReview = () => {
     };
     const isReview = window.confirm("Are you sure information is correct?");
     if (isReview) {
-      fetch("https://mysterious-hollows-45831.herokuapp.com/reviews", {
+      fetch("https://mdbappymia-my-portfolio-server.onrender.com/reviews", {
         method: "POST",
         headers: {
           "content-type": "application/json",

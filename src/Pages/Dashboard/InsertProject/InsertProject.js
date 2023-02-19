@@ -31,7 +31,7 @@ const InsertProject = () => {
 
     const isProjectAdd = window.confirm("Are you sure add the project?");
     if (isProjectAdd) {
-      fetch("https://mysterious-hollows-45831.herokuapp.com/projects", {
+      fetch("https://mdbappymia-my-portfolio-server.onrender.com/projects", {
         method: "POST",
         headers: {
           "content-type": "application/json",

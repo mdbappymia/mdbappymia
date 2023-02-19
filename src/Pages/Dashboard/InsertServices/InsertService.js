@@ -15,7 +15,7 @@ const InsertService = () => {
     const insertService = { ...data, email: user.email };
     const isServiceAdded = window.confirm("Are you sure add the service?");
     if (isServiceAdded) {
-      fetch("https://mysterious-hollows-45831.herokuapp.com/services", {
+      fetch("https://mdbappymia-my-portfolio-server.onrender.com/services", {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -6,7 +6,7 @@ const ProjectDetails = ({ id }) => {
   const [project, setProject] = useState({});
   const [recall, setRecall] = useState(false);
   useEffect(() => {
-    fetch(`https://mysterious-hollows-45831.herokuapp.com/projects/${id}`)
+    fetch(`https://mdbappymia-my-portfolio-server.onrender.com/projects/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProject(data);

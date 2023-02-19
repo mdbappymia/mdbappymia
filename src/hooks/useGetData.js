@@ -9,7 +9,7 @@ const useGetData = () => {
   const [recall, setRecall] = useState(false);
 
   useEffect(() => {
-    fetch("https://mysterious-hollows-45831.herokuapp.com/allData")
+    fetch("https://mdbappymia-my-portfolio-server.onrender.com/allData")
       .then((res) => res.json())
       .then((data) => {
         setServices(data.services);
