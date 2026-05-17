@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# MD. BAPPY MIA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MD. BAPPY MIA**
 
-## Available Scripts
+**MERN Stack Developer | Full-Stack Web Engineer**
 
-In the project directory, you can run:
+📍 Dhaka, Bangladesh | 📞 +880 1732 249303 | 📧 [mdbappymia.hstu@gmail.com](mailto:mdbappymia.hstu@gmail.com)
+🌐 [https://bappymia.web.app](https://bappymia.web.app) | [https://github.com/mdbappymia](https://github.com/mdbappymia) | [https://linkedin.com/in/dev-bappy-mia](https://linkedin.com/in/dev-bappy-mia)
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Summary
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+MERN Stack Developer with 4+ years of experience at Radiant Data Systems Ltd. building scalable web apps using React, Node.js, Express, and MongoDB. Skilled in real-time systems (Socket.io), REST APIs, JWT auth, and database design.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Skills
 
-### `yarn build`
+**Frontend:** React, Next.js, TypeScript, Redux, Tailwind CSS
+**Backend:** Node.js, Express.js, Socket.io
+**Database:** MongoDB, MySQL, Oracle
+**Auth & Cloud:** JWT, Firebase
+**Tools:** Git, Docker, Postman, Swagger, VS Code
+**Languages:** JavaScript, Python, C#, Golang, Rust
+**AI Tools:** ChatGPT, Copilot, Claude, OpenAI API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💼 Experience
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Software Developer (MERN)** – Radiant Data Systems Ltd. (2022–Present)
 
-### `yarn eject`
+* Built scalable MERN applications
+* Developed real-time features with Socket.io
+* Implemented JWT/Firebase authentication
+* Designed REST APIs + database systems
+* Worked on healthcare integration (Mirth Connect)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📌 Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* **HRMS System** – Role-based HR platform (React, Node, MongoDB)
+* **Dinner Pulse** – Meal management system with notifications
+* **Chat App** – Real-time messaging using Socket.io
+* **Ticket System** – Issue tracking with alerts
+* **Quiz App** – Firebase-based quiz platform
+* **Image Editor** – Browser-based editing tool
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🎓 Education
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+B.Sc. in ECE – Hajee Mohammad Danesh Science & Technology University (Bangladesh)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Email: [mdbappymia.hstu@gmail.com](mailto:mdbappymia.hstu@gmail.com)
+Portfolio: [https://bappymia.web.app](https://bappymia.web.app)
+GitHub: [https://github.com/mdbappymia](https://github.com/mdbappymia)
+LinkedIn: [https://linkedin.com/in/dev-bappy-mia](https://linkedin.com/in/dev-bappy-mia)
